@@ -96,3 +96,21 @@ All 6 country sections were generated successfully with plausible income and hou
 
 burden figures consistent with Phase 1 exploration.
 
+
+
+\## Phase 3 — Analysis Notes
+
+
+
+Income: Brasil highest ($1,458 median), Argentina lowest ($798).
+
+Age vs. savings: Savings rate triples from 5.72% (18-22) to 15.52% (29-32).
+
+Spending: Housing (28.54%) and food (23.83%) dominate.
+
+Credit card holders: Spend more on food/entertainment, save slightly more than non-holders.
+
+AI usage: Moderate correlation with satisfaction (r = 0.571), likely tied to income too.
+
+Housing burden: Argentina highest (34.09%), Perú lowest (24.63%).
+
