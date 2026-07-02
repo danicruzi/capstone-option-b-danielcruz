@@ -68,3 +68,31 @@ A new boolean column, ahorro\_negativo, was added to flag these rows for analysi
 
 columns). Original raw file (data/latam\_finanzas\_2025.csv) remains untouched.
 
+
+
+
+
+\## Phase 2.5 — Country Profiler Agent Notes
+
+
+
+Created a custom country-profiler agent (.claude/agents/country-profiler.md) and
+
+invoked it for all 6 countries in parallel. Results were combined into
+
+scripts/country\_profiles.md.
+
+
+
+Note: the agent file initially had a frontmatter formatting error (broken --- markers),
+
+which caused Claude Code to fall back to a general-purpose agent for this run. The
+
+file has since been corrected and should work as a proper custom agent going forward.
+
+
+
+All 6 country sections were generated successfully with plausible income and housing
+
+burden figures consistent with Phase 1 exploration.
+
