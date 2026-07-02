@@ -130,3 +130,11 @@ savings, spending breakdown, satisfaction by
 
 AI usage, and housing burden by country. All charts include titles, labelled axes, and the required source note.
 
+
+
+\## Phase 5 — Interpretation Notes
+
+
+
+Six plain-language findings written for a non-technical audience. Each finding follows: fact, implication for programme design, and one specific recommendation. Finding 5  appropriately flags that the correlation may be confounded by income rather than a direct causal effect.
+
