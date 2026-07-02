@@ -138,3 +138,13 @@ AI usage, and housing burden by country. All charts include titles, labelled axe
 
 Six plain-language findings written for a non-technical audience. Each finding follows: fact, implication for programme design, and one specific recommendation. Finding 5  appropriately flags that the correlation may be confounded by income rather than a direct causal effect.
 
+
+
+
+
+\## Phase 6 — Report Notes
+
+
+
+The final executive report written to analysis-report.mid. It covers all of the required sections. The chart references were corrected to proper Markdown image links too, pointing to the charts/ folder. 
+
