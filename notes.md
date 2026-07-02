@@ -114,3 +114,19 @@ AI usage: Moderate correlation with satisfaction (r = 0.571), likely tied to inc
 
 Housing burden: Argentina highest (34.09%), Perú lowest (24.63%).
 
+
+
+\## Phase 4 — Visualization Notes
+
+
+
+\## Phase 4 — Visualization Notes
+
+
+
+Generated all 5 required charts in charts/: income by country, age vs.
+
+savings, spending breakdown, satisfaction by
+
+AI usage, and housing burden by country. All charts include titles, labelled axes, and the required source note.
+
