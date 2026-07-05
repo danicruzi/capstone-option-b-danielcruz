@@ -73,3 +73,15 @@ df = pd.read_csv('data/latam_fin
 2026-07-04 20:02:22 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && mkdir -p charts && python scripts/04_visualise.py
 2026-07-04 20:02:38 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && python scripts/04_visualise.py
 2026-07-04 20:14:08 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && ls scripts/ 2>&1; echo "---"; find . -iname "*finding*" 2>/dev/n
+2026-07-04 20:44:48 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && ls && echo "---SCRIPTS---" && ls scripts && echo "---CHARTS---" 
+2026-07-04 20:45:01 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && find . -iname "*finding*" 2>/dev/null; echo "---"; find . -iname
+2026-07-04 20:45:15 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && (venv/Scripts/python scripts/03_analyse.py 2>&1 || python script
+2026-07-04 20:46:21 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && python -c "
+import pandas as pd
+df = pd.read_csv('data/latam_fin
+2026-07-04 20:46:32 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && python -c "
+import pandas as pd
+df = pd.read_csv('data/latam_fin
+2026-07-04 20:48:18 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && python -c "
+import re
+text = open('analysis-report.md', encoding
