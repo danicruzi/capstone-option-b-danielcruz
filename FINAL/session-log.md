@@ -48,3 +48,17 @@ df = pd.read_csv('data/latam_fin
 2026-07-04 19:13:54 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && find .claude -iname "*country*" 2>/dev/null && echo "---" && cat
 2026-07-04 19:13:56 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && grep -ril "country profiles" . --include="*.md" --include="*.py"
 2026-07-04 19:16:24 | status:OK | cat "C:\Users\Daniel\capstone-final_DanielCruz\FINAL\.mcp.json"
+2026-07-04 19:37:41 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && python -c "
+import pandas as pd
+df = pd.read_csv('data/latam_fin
+2026-07-04 19:37:47 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && python -c "
+import pandas as pd
+df = pd.read_csv('data/latam_fin
+2026-07-04 19:37:53 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && python -c "
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.std
+2026-07-04 19:38:27 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && python scripts/03_analyse.py
+2026-07-04 19:38:40 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && python scripts/03_analyse.py 2>&1 | head -5
+2026-07-04 19:41:08 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && git diff .mcp.json
+2026-07-04 19:41:21 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && git log --oneline -- .mcp.json && echo "---" && cat .gitignore 2
+2026-07-04 19:43:49 | status:FAILED | cd "C:/Users/Daniel/capstone-final_DanielCruz" && cat .gitignore 2>/dev/null; echo "---COMMITTED---"; git show HEAD:FINA
