@@ -3,5 +3,5 @@ __pycache__/
 *.pyc
 .DS_Store
 FINAL/.claude/settings.local.json
+FINAL/.mcp.json
 FINAL/.mcp.json.local
-venv/
