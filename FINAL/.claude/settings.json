@@ -3,25 +3,31 @@
     "PostToolUse": [
       {
         "matcher": "Write",
-        "handler": {
-          "type": "command",
-          "command": "f=\"$CLAUDE_FILE_PATH\"; if [[ \"$f\" == charts/*.png ]]; then n=$(ls charts/*.png 2>/dev/null | wc -l); echo \"Chart saved: $(basename $f) — $n/5 charts complete\"; fi"
-        }
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import json,sys,os,glob; d=json.load(sys.stdin); p=d.get('tool_input',{}).get('file_path',''); n=len(glob.glob('charts/*.png')); print(f'Chart saved: {os.path.basename(p)} — {n}/5 charts complete') if p.replace(chr(92),'/').find('charts/')!=-1 and p.endswith('.png') else None\""
+          }
+        ]
       },
       {
         "matcher": "Bash",
-        "handler": {
-          "type": "command",
-          "command": "echo \"$(date '+%Y-%m-%d %H:%M:%S') | exit:$CLAUDE_TOOL_RESULT_EXIT_CODE | $(echo $CLAUDE_TOOL_INPUT | head -c 120)\" >> session-log.md"
-        }
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import json,sys,datetime; d=json.load(sys.stdin); cmd=d.get('tool_input',{}).get('command','')[:120]; interrupted=d.get('tool_response',{}).get('interrupted', False); stderr=d.get('tool_response',{}).get('stderr',''); status='FAILED' if (interrupted or stderr) else 'OK'; f=open('session-log.md','a'); f.write(f\\\"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | status:{status} | {cmd}\\n\\\")\""
+          }
+        ]
       }
     ],
     "Stop": [
       {
-        "handler": {
-          "type": "command",
-          "command": "bash .claude/hooks/validate-phases.sh"
-        }
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/validate-phases.sh"
+          }
+        ]
       }
     ]
   }
