@@ -72,3 +72,4 @@ import pandas as pd
 df = pd.read_csv('data/latam_fin
 2026-07-04 20:02:22 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && mkdir -p charts && python scripts/04_visualise.py
 2026-07-04 20:02:38 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && python scripts/04_visualise.py
+2026-07-04 20:14:08 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && ls scripts/ 2>&1; echo "---"; find . -iname "*finding*" 2>/dev/n
