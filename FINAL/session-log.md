@@ -62,3 +62,13 @@ sys.stdout = io.TextIOWrapper(sys.std
 2026-07-04 19:41:08 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && git diff .mcp.json
 2026-07-04 19:41:21 | status:OK | cd "C:/Users/Daniel/capstone-final_DanielCruz/FINAL" && git log --oneline -- .mcp.json && echo "---" && cat .gitignore 2
 2026-07-04 19:43:49 | status:FAILED | cd "C:/Users/Daniel/capstone-final_DanielCruz" && cat .gitignore 2>/dev/null; echo "---COMMITTED---"; git show HEAD:FINA
+2026-07-04 20:00:14 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && ls venv/ 2>&1; ls venv/bin 2>&1 | head -20
+2026-07-04 20:00:21 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && ls -la; echo "---parent---"; ls -la ..
+2026-07-04 20:00:32 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && ls data scripts; echo "---which python---"; which python python3
+2026-07-04 20:00:51 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && "../venv/Scripts/python.exe" -m pip list 2>&1 | grep -i -E "matp
+2026-07-04 20:01:00 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && echo "--venv pip list--"; "../venv/Scripts/python.exe" -m pip li
+2026-07-04 20:01:08 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && python -c "
+import pandas as pd
+df = pd.read_csv('data/latam_fin
+2026-07-04 20:02:22 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && mkdir -p charts && python scripts/04_visualise.py
+2026-07-04 20:02:38 | status:OK | cd "C:\Users\Daniel\capstone-final_DanielCruz\FINAL" && python scripts/04_visualise.py
